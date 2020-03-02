@@ -1,0 +1,41 @@
+body {
+  background: orange;
+}
+li {
+  border: 2px solid red;
+}
+#third {
+  background: green;
+}
+/* Element selector, select by the elements*/
+/*ID selector, select by the id of the element*/
+/*class selector, select multiple elements class =*/
+.special {
+  background: grey;
+  text-decoration: line-through;
+}
+/*
+Advanced Selectors:
+Star Selector - Applies to every single element
+Descendant selector - Common, it takes or more tag names and it chains them together. 
+    Nested things
+Adjacent Selector - Select elements that come after an element or a sibling
+attribute selector - Select elemnts based on the actual attribute 
+nth of type - selects every nth of a specific element. 
+*/
+* {
+  border: 1px solid lightgray;
+}
+li a {
+  background: blue;
+  color: red;
+}
+h4 + ul {
+  color: green;
+}
+a[href="https://google.com"] {
+  border: 1px solid black;
+}
+li:nth-of-type(2) {
+  background: purple;
+}

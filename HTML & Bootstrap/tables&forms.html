@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  
+  <head> <title> </title></head>
+  <body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Breed</th>
+              </tr>
+        </thead>
+        <tbody>
+            <td>Rush</td>
+            <td>3</td>
+            <td>Pomsky</td>
+          </tr>
+          <tr>
+            <td>Megaman</td>
+            <td>20</td>
+            <td>Cat</td>
+          </tr>
+        </tbody>
+ 
+    </table>
+    <!-- <form>
+        <label>
+            <input>
+        Data validation
+    action - the url to send form data to
+    method - the type of http request, get request or post request: get request when searching, post request when we are sending data
+<form action="" method=""</form> Sends data-->
+<!--Labels-->
+    <h1>Login</h1>
+    <!-- <form action="http://wikipedia.org" method="get"> -->
+   <form action="http://wikipedia.org" method="GET">
+      <!--Data strings-->
+      <label>Username:<input name="username" type="text" placeholder="username"></label>
+      
+      <label>Password:<input name="password" type="password" placeholder="password"></label>
+      <input type="submit">
+    </form>
+
+    <form action="http://wikipedia.org" method="GET">
+      <!--Data strings-->
+      <label for="username">Email:</label>
+        <input id="username" name="username" type="email" placeholder="email" required>
+      
+      <label for="password">Password:</label>
+        <input id="password" name="password" type="password" placeholder="password" required>
+      <input type="submit">
+    </form>
+    <!--Inputs demo-->
+    <p>Do you prefer cats or dogs?</p>
+    <form>
+      <label for="dogs">Dogs:</label>
+      <input name="petChoice" value="dogs" id="dogs" type="radio">
+      <label for="cats">Cats:</label>
+      <input name="petChoice" value="cats" id="cats" type="radio">
+      <p>What's your favorite color</p>
+      <select name="color">
+        <option value="blood">Red</option>
+        <option value="ugly">Orange</option>
+        <option value="celia">Green</option>
+      </select>
+      <textarea name="paragraph" rows="10" cols="10">
+
+      </textarea>
+      <button>Go!</button>
+    </form>
+  </body>
+</html>

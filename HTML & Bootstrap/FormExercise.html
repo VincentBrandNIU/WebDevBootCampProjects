@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--value is what is passed-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Forms Exercise</title>
+  </head>
+  <body>
+    <h1>Register</h1>
+    <form action="" method="">
+      <label for="firstName">First Name:</label>
+      <input
+        name="firstName"
+        placeholder="First Name"
+        id="firstname"
+        type="text"
+        required
+      />
+      <label for="lastName">Last Name:</label>
+      <input
+        name="lastName"
+        placeholder="Last Name"
+        id="lastname"
+        type="text"
+        required
+      /><br />
+
+      <label for="male" id="male">Male:</label>
+      <input name="genderChoice" value="male" id="male" type="radio" required />
+      <label for="female" id="female">Female:</label>
+      <input
+        name="genderChoice"
+        value="female"
+        id="female"
+        type="radio"
+        required
+      />
+      <label for="other" id="other">Other:</label>
+      <input
+        name="genderChoice"
+        value="other"
+        id="other"
+        type="radio"
+        required
+      /><br />
+
+      <label for="email">Email:</label>
+      <input
+        placeholder="email"
+        name="email"
+        id="email"
+        type="email"
+        required
+      />
+      <label for="password">Password:</label>
+      <input
+        name="password"
+        placeholder="password"
+        id="pass"
+        type="password"
+        pattern=".{5,10}"
+        required
+        title="5 to 10 characters"
+      /><br />
+
+      <label for="birthday">Birthday:</label>
+      <select name="Month" required>
+        <option value="" selected disabled hidden>Month</option>
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+      </select>
+      <select name="Day" required>
+        <option value="" selected disabled hidden>Day</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+      <select name="Year" required>
+        <option value="" selected disabled hidden>Year</option>
+        <option>1991</option>
+        <option>1992</option>
+        <option>1993</option> </select
+      ><br />
+      <label for="terms">I agree to the terms and conditions</label>
+      <input id="terms" name="agreed" type="checkbox" required /><br />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

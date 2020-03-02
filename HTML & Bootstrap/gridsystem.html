@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <head>
+    <title>gridsystem</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style type="text/css">
+        .pink{
+            background: pink;
+            border: 1px solid purple;
+        }
+        .orange{
+          background: orange;
+          border: 1px solid red;
+          height: 50px;
+        
+        }
+    </style>
+  </head>
+<!-- 4 different sizes of columns 
+     Nest grids inside of other grids so basically java grid layout:
+     xs- Mobile
+     sm- Tablet
+     Medium- smaller browser window
+     large- Which  we have right here. 
+     Changing between table tools. 
+    -->
+  <body>
+    <div class="container">
+<!--         <div class="row">
+            <div class="col-lg-2 col-md-2 pink">Col 1</div>
+            <div class="col-lg-8 col-md-2 pink">Col 2</div>
+            <div class="col-lg-2 col-md-2 pink">Col 3</div>
+        </div> -->
+        <!--Resizing grid units based on window size: mobile to desktop-->
+        <!--Nesting grids-->
+        <div class="row">
+            <div class="col-md-3 col-sm-6 pink">
+              <div class="row">
+                <div class="col-lg-6 orange">Halfway</div>
+                <div class="col-lg-6 orange">Other half</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 pink">Tour Date</div>
+            <div class="col-md-3 col-sm-6 pink">Tour Date</div>
+            <div class="col-md-3 col-sm-6 pink">
+              <div class="row">
+                <div class="col-lg-2 orange"></div>
+                <div class="col-lg-2 orange"></div>
+                <div class="col-lg-2 orange"></div>
+                <div class="col-lg-2 orange"></div>
+                <div class="col-lg-2 orange"></div>
+                <div class="col-lg-2 orange"></div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

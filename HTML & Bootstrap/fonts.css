@@ -1,0 +1,26 @@
+/* font-family*/
+/*font-size*/
+/*font-wieght*/
+/* line-height
+text-align
+text-decoration
+font-weight
+line-height
+*/
+
+p {
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  line-height: 2;
+  text-align: center;
+  text-decoration: underline;
+}
+h1 {
+  font-size: 100px;
+  text-align: center;
+  text-decoration: line-through;
+}
+
+span {
+  font-size: 2em;
+}
